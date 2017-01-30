@@ -1,0 +1,47 @@
+<template name="chat">
+  <div class="col-md-4">
+    <div class="panel panel-warning">
+      <div class="panel-title panel-heading">
+        Usuário: {{currentUser.profile.nome}}
+      </div>
+      <div class="panel-body">
+        <div class="list-group">
+          {{#each usuarios}}
+          <a href="#" id="usuarioLista" class="list-group-item clearfix">
+            {{profile.nome}}
+          </a>
+          {{/each}}
+        </div>
+        <a href="#" id="sair" class="btn btn-danger btn-block">Sair</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    {{#if usuarioEscolhido}}
+    <div class="panel panel-primary">
+      <div class="panel-heading panel-title">
+        Mensagens de: {{usuarioEscolhido.nome}}
+      </div>
+      <div class="panel-body">
+        <div class="col-xs-12">
+          {{#each mensagens}}
+          <div class="col-xs-12">
+            <div class="label label-{{alert}} pull-{{pull}}">
+              {{mensagem}}
+            </div>
+          </div>
+          {{/each}}
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-12">
+          <br />
+          <div class="form-group">
+            <textarea class="form-control" rows="2" id="mensagem" placeholder="Mensagem"></textarea>
+          </div>
+          <a href="#" id="enviarMensagem" class="btn btn-success pull-right">Enviar <i class="fa fa-paper-plane"></i></a>
+        </div>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</template>

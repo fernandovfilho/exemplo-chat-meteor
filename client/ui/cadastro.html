@@ -1,0 +1,28 @@
+<template name="cadastro">
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-title panel-heading">
+        Cadastro
+      </div>
+      <div class="panel-body">
+        <form class="" action="#" method="post" id="cadastro">
+          <div class="form-group">
+            <label for="usuario">Usuário:</label>
+            <input type="text" class="form-control" id="usuario" required>
+          </div>
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" class="form-control" id="senha" required>
+          </div>
+          <button type="submit" class="btn btn-block btn-success">Cadastrar</button>
+          <br />
+          <a href="{{pathFor route='acesso'}}" class="btn btn-block btn-primary">Voltar</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,25 @@
+<template name="acesso">
+  <div class="col-md-4">
+    <div class="panel panel-warning">
+      <div class="panel-title panel-heading">
+        Acesso
+      </div>
+      <div class="panel-body">
+        <form class="" action="#" id="acesso" method="post">
+          <div class="form-group">
+            <label for="usuario">Usuário:</label>
+            <input type="text" class="form-control" id="usuario" required>
+          </div>
+          <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" class="form-control" id="senha" required>
+          </div>
+
+          <button type="submit" class="btn btn-block btn-success">Entrar</button>
+        </form>
+        <br />
+        <a href="{{pathFor route='cadastro'}}" class="btn btn-block btn-primary">Cadastrar</a>
+      </div>
+    </div>
+  </div>
+</template>
