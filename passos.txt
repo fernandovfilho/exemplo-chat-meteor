@@ -1,7 +1,0 @@
-MeteorJS
-FullStack, javascript cliente e server, mongodb, padrão realtime
-elementaryOS, SSD, live reload, atom
-
-meteor create exemplo_chat
-meteor npm install
-https://atmospherejs.com/
